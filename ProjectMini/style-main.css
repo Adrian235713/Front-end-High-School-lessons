@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------------------------------------- */
+/* Podsumowanie  */
+* {
+    position: relative;
+    color: aliceblue;
+    text-align: justify;
+}
+
+html body {
+    background-color: hwb(0 0% 100% / 0.919);
+}
+
+.header {
+    background-image: url("img/Neuron.jpg");
+    width: 100vw;
+    height: 35vh;
+    background-size: cover;
+}
+
+/* ---------------------------------------------------------- */
+
+.menu {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+}
+
+/* ---------------------------------------------------------- */
+
+.information {
+    width: 100vw;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.information div {
+    width: 320px;
+    height: 280px;
+    border: 1px solid whitesmoke;
+    margin: 10px;
+}
+
+.information img {
+    width: 320px;
+    height: 210px;
+}
+
+.information p {
+    font-size: 12px;
+    margin: 7px;
+}
+/* ---------------------------------------------------------- */
+
+.footer {
+    width: 8vw;
+    height: 5vw;
+}
+
+/* ---------------------------------------------------------- */
+
+/* Posytion  */

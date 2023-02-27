@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* The position Property
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+Elements are then positioned using the top, bottom, left, and right properties. 
+However, these properties will not work unless the position property is set first. 
+They also work differently depending on the position value. */
+
+html body {
+    background-color: black;
+}
+
+div {
+    background-color: aliceblue;
+    height: 90px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+section {
+    height: 80vh;
+    width: 100vw;
+    margin: 10px;
+    background-color: orange;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* fixed !!!! */
+
+/* An element with position: fixed; is positioned relative to the viewport, which means 
+it always stays in the same place even if the page is scrolled. 
+The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used: */
+
+.section2-div1 {
+    position: fixed;
+    background-color: blue;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* absolute */
+
+/* An element with position: absolute; is positioned relative to the nearest positioned ancestor 
+(instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document 
+body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements. */
+
+
+/* wszystkie sa w tym samym miejscu   XD*/
+.section3 div {
+    position: absolute;
+    left: 100px;
+}
+
+/* .section3 :nth-child(1) {
+    position: absolute;
+    left: 100px;
+}
+
+.section3 :nth-child(2) {
+    position: absolute;
+    left: 900px;
+}
+
+.section3 :nth-child(3) {
+    position: absolute;
+    left: 300px;
+} */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. 
+It is positioned relative until a given offset position is met in the viewport - 
+then it "sticks" in place (like position:fixed). */
+
+.section4 div {
+    position: sticky;
+    left: 100px;
+    background-color: brown;
+}
